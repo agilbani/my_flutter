@@ -37,7 +37,7 @@ class _MyListPage extends State<ListPage> {
                   children: <Widget>[
                     view(),
                     menu(),
-                    search()
+                    search(),
                   ],
                 ),
               ),
@@ -51,10 +51,30 @@ class _MyListPage extends State<ListPage> {
   Widget search(){
     return Container(
       margin: EdgeInsets.all(15.0),
-      child: Column(
+      child: Column(        
         children: <Widget>[
           Text('WHERE DO YOU WANT TO GO ?', style: TextStyle(color: Colors.blueAccent[400], fontSize: 35,
-          fontWeight: FontWeight.w600),)
+          fontWeight: FontWeight.w600),),
+          Container(
+            margin: EdgeInsets.only(top: 10.0),
+            child: Material(             
+              elevation: 3,            
+              borderRadius: new BorderRadius.circular(5.0),          
+              color: Colors.white,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: 40,
+                child: InkWell(                                    
+                  onTap: (){},
+                  child: Container(    
+                    alignment: Alignment.centerRight,   
+                    margin: EdgeInsets.only(right: 8.0),             
+                    child: new Icon(Icons.search),
+                  ),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
