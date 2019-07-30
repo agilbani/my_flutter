@@ -18,8 +18,8 @@ class _HomeState extends State<HomePage> {
   final List<Widget> _children = [
     // Navigator.push(context, MaterialPageRoute(builder: (context) => ExpansionTileSample())),
     // PlaceholderWidget(Colors.deepOrange),
-    ExpansionTileSample(),
     ListPage(),
+    ExpansionTileSample(),
     ProfilePage()
   ];
 

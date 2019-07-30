@@ -99,7 +99,7 @@ class Home extends State<ExpansionTileSample> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Home'),
+          title: Text('List'),
           centerTitle: true,
         ),        
         body: new Container(        
